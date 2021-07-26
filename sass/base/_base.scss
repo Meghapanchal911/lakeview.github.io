@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+     font-size: 62.5%;   /* PX TO PERCENTAGE fontsize in general is 16px we want 10px so (10/16)*100=62.5% */
+     
+     @include respond(big-desktop){
+         font-size: 75%; // 1rem=12px 12/16*100=75%
+     }
+     @include respond(tab-land){
+         font-size: 56.25%; // 1rem=9px 8/16*100=56.25%
+     }
+     @include respond(tab-port){
+         font-size: 50%; // 1rem=8px 8/16*100=50%
+     }
+     @include respond(phones){
+         font-size: 50%; // 1rem=8px 8/16*100=50%
+     }
+}
+body{
+    font-family: "Merriweather",serif;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 0rem;     /* 3times root font-size(10px) = 3rem(30px) */
+    color: #777;
+    @include respond(tab-port){
+    padding: 0;
+}
+}

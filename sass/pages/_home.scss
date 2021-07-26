@@ -1,0 +1,32 @@
+.about-section{
+    background-color: $grey-light-1;
+    padding: 7rem 0;
+    @include respond(tab-port){
+        padding: 3rem 0;
+    }
+}
+.amenity-section{
+    background-color: $white;
+    padding: 7rem 0;
+    @include respond(tab-port){
+        margin-top: 3rem;
+    }
+}
+.testimonial-section{
+    padding: 13rem 0;
+    position:relative;
+}
+.contact-section{
+    padding-top: 5rem;
+    background-color: #fff;
+    @include respond(tab-port){
+        padding-top: 3rem 0;
+    }
+}
+.membership-section{
+    padding: 5rem 0;
+    background-color:$grey-light-1;
+    @include respond(tab-port){
+        padding: 3rem 0;
+    }
+}
